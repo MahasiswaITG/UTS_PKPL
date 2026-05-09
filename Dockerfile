@@ -16,7 +16,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Salin folder src ke dalam container
-COPY src/ .
+COPY uts_pkpl/ .
 
 # Berikan izin akses folder storage dan cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
